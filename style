@@ -1,0 +1,165 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --card: #1f2937;
+  --text: #e5e7eb;
+  --muted: #cbd5e1;
+  --accent: #8b5cf6;
+  --accent-strong: #7c3aed;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #0b1020 0%, #121827 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  padding: 3rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 0.18rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+header p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+section {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.45rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+li + li {
+  margin-top: 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+  text-decoration: none;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 26px rgba(124, 58, 237, 0.4);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 1.5rem 2rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+form {
+  display: block;
+  max-width: 720px;
+  margin: 2rem auto 0;
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #0b1220;
+  color: var(--text);
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+button {
+  margin-top: 1.25rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.95rem 1.2rem;
+  cursor: pointer;
+}
+
+#result {
+  max-width: 720px;
+  margin: 1.5rem auto 0;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
